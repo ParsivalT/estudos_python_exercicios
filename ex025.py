@@ -1,0 +1,5 @@
+nome = str(input('Digite Seu Nome Completo: '))
+print('--'*30)
+nome = nome.title()
+print('Silva' in nome)
+print('--'*30)

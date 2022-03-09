@@ -13,7 +13,3 @@ print('E um numero?\033[31m', a.isnumeric(), '\033[m')
 print('-=-'*20)
 
 
-'''p = input('Digite o Seu Nome: ')
-if p.isnumeric() == True: 
-    print('Nao Insira Numeros Nesse Campo!')'''
-    

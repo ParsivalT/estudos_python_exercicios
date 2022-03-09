@@ -2,7 +2,7 @@
  
 print('-=-'*20)
 m = float(input('digite o valor em metros: '))
-print('~'*58)
+
 c = m * 100 
 mi =  m * 1000
 

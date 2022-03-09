@@ -32,6 +32,10 @@ Repositório dedicado a soluções de todos os desafios propostos no curso de Py
 
 
 #
- **Repositorio que me motivou**: 
- https://github.com/matheusfelipeog/curso-em-video-python3
+ <div align="center">
+  <p>Feito com :heart: e JavaScript.</p>
+  <p>Créditos: <a href="https://github.com/matheusfelipeog/curso-em-video-python3">Matheus Felipe</a> 
+  </p>
+</div>
+
 #

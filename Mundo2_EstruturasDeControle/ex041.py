@@ -1,19 +1,31 @@
-'''A confederecao nascional de natacao presica de um programa que leia o 
-ano de nascimento de um atleta e mostre sua categoria de acordo com a idade
+'''
+Desafio 41
 
-ate 9 anos:MIRIM
-ate 14 anos:INFANTIL
-ate 19 anos:JUNIOR
-ate 20 anos:SENIOR
-acima:MASTER'''
+Problema:  A Confederação Nacional de Natação precisa de um programa que leia
+           o ano de nascimento de um atleta e mostre sua categoria, de acordo com a idade:
 
-from datetime import date
+                – Até 9 anos: MIRIM
+
+                – Até 14 anos: INFANTIL
+
+                – Até 19 anos: JÚNIOR
+
+                – Até 25 anos: SÊNIOR
+
+                – Acima de 25 anos: MASTER
+                
+Resolucao do problema:
+'''
+
+from datetime import date   #para pegar a data atual!
+
 print('-=-'*20)
 i = int(input('Digite o Ano De nascimento do Atleta: '))
-i = date.today().year - i 
+i = date.today().year - i   #pego o ano atual e subtraio pelo (ano de nascimento)
 print('~'*30)
 
 print(f'O Atleta Tem {i} Anos ')
+
 if i <= 9:
     print('O Atleta E Mirim')
 

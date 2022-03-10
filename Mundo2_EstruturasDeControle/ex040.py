@@ -1,13 +1,16 @@
-'''Crie um Programa Que leia duas notas de um aluno e calcule sua media. mostrando uma mensagem no
-final de acordo com a media atingida!
+'''
+Desafio 40
 
--Media abaixo de 5.0:
-REPROVADO!
+Problema:  Crie um programa que leia duas notas de um aluno e calcule sua média,
+           mostrando uma mensagem no final, de acordo com a média atingida:
 
--MEdia entre 5.0 e 6.9:
+                – Média abaixo de 5.0: REPROVADO
 
-Media 7.0 ou superior: 
-APROVADO!
+                – Média entre 5.0 e 6.9: RECUPERAÇÃO
+
+                – Média 7.0 ou superior: APROVADO
+
+Resolucao do problema:
 ''' 
 print('-=-'*20)
 n1 = float(input('Digite A primeira nota!: '))
@@ -16,6 +19,7 @@ m = (n1 + n2)/2
 print('~'*30)
 
 print(f'A Media Do Aluno Foi {m}!')
+
 if m >= 7.0:
     print('O Aluno foi \033[36mAPROVADO!\033[m')
 

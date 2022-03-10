@@ -1,16 +1,20 @@
-'''Faca Um Programa que leia a idade de um jovem e iforme. de acordo com sua idade 
-se ele ainda vai se alistar ao servico militar, se ea hora de se alistar. 
-se ja passou do tempo do alistamento.
+'''
+Desafio 39
 
-seu programa deve tambem mostrar o tempo que falta ou que passou do prazo!'''
+Problema: Faça um programa que leia o ano de nascimento de um jovem e informe, 
+          de acordo com a sua idade, se ele ainda vai se alistar ao serviço militar, 
+          se é a hora exata de se alistar ou se já passou do tempo do alistamento. 
+          Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 
+Resolucao do problema:
+'''
 from datetime import date #importei a biblioteca datetime para me auxiliar e para conseguir a data atual!
 
-print('-=-'*20)
-i = int(input('Digite A Sua data de nascimento: '))
+print('-=-'*10)
+data_nascimento = int(input('Digite o ano em que voce nasceu: '))
 print('~'*30)
 
-a = date.today().year - i
+a = date.today().year - data_nascimento
 
 if a == 18: 
     print('\033[36mVoce Tem 18 Anos Logo!')
@@ -21,4 +25,4 @@ elif a > 18:
 
 else:
     print(f'Ainda Falta {(a-18)* -1} Ano Para voce ingressar Ao servico militar!')
-print('-=-'*20)
+print('-=-'*10)

@@ -1,6 +1,13 @@
-#Ordenar uma lista sem o sort!
-# for: Thiago 06/03/2022
+'''
+Desafio 80
 
+Problema:  Crie um programa onde o usuário possa digitar cinco valores 
+           numéricos e cadastre-os em uma lista, já na posição correta 
+           de inserção (sem usar o sort()). No final, mostre a lista ordenada 
+           na tela.
+           
+Resolucao do problema:
+'''
 lista = []
 lista1 = []
 
@@ -17,11 +24,12 @@ for c in range(6):
     pos = 0 
 
     while pos < len(lista):
+
         if valor < lista[pos]:
             lista.insert(pos, valor)
             print(f'Valor adicionado a posicao: {pos}')
             break    
-        pos += 1
 
+        pos += 1
 
 print(f'\nResultado {lista}')

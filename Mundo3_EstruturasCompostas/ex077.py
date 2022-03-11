@@ -1,3 +1,7 @@
+'''
+Desafio 77
+
+Problema:'''
 palavras = ('python', 'caxinha', 'agenda', 'pokemon', 'avenida')
 vogais = ('a', 'e', 'i', 'o', 'u')
 palavra = ''

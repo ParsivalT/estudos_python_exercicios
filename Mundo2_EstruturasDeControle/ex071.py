@@ -1,11 +1,20 @@
-# Simula um caixa eletronico!
+'''
+Desafio 71
+
+Problema: Crie um programa que simule o funcionamento de um caixa eletrônico. 
+          No início, pergunte ao usuário qual será o valor a ser sacado (número inteiro) 
+          e o programa vai informar quantas cédulas de cada valor serão entregues. 
+          
+          OBS:
+              considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
+              
+Resolucao do problema:
+'''
 print('='*34)
 print('\t BANCO RACHADINHA')
 print('='*34)
 
-n50 = n20 = n10 = n1 = 0  #defino as variaveis  
-caixa = 0
-
+n50 = n20 = n10 = n1 = caixa = 0  #defino as variaveis  
 valor = int(input('Qual o Valor do Saque?: R$'))  
 caixa = valor 
 

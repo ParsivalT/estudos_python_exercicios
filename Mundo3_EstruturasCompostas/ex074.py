@@ -1,22 +1,34 @@
-#sortei 5 valores aleatores e adicione a uma tupla 
-#Logo em seguida Mostre os valores, qual o menor e qual o maior
+'''
+Desafio 74
+
+Problema:   Crie um programa que vai gerar cinco números aleatórios e 
+            colocar em uma tupla. Depois disso, mostre a listagem de números 
+            gerados e também indique o menor e o maior valor que estão na tupla.
+
+Resolucao do problema:
+'''
 from random import randint
 
 n1 = n2 = n3 = n4 = n5 = 0
 print('='*38)
+
 for i in range(0, 6):
 
     if i == 1:
         n1 = randint(1,10)
+
     else:
         if i == 2:
             n2 = randint(1,10)
+
         else:
             if i == 3:
                 n3 = randint(1,10)
+
             else:
                 if i == 4:
                     n4 = randint(1,10)
+
                 else:
                     if i == 5:
                         n5 = randint(1,10)                   
@@ -32,6 +44,7 @@ print()
                    # Economizaria linhas 
 menor = lista[0]
 maior = lista[0]
+
 for x in range(len(lista)):
 
     if lista[x] > maior:

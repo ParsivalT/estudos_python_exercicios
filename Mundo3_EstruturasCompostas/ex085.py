@@ -1,8 +1,12 @@
-#For Thiago 08/03/2022
-#Algoritimo que recebe varios valores diferentes e guarda em uma lista.
-#logo em seguida mostra os mesmo separados entre IMPAR e PAR.
+'''
+Desafio 85
 
-
+Problema: Crie um programa onde o usuário possa digitar sete valores numéricos e 
+          cadastre-os em uma lista única que mantenha separados os valores pares e 
+          ímpares. No final, mostre os valores pares e ímpares em ordem crescente.
+          
+Resolucao do problema:
+'''
 lista = [[],[],[]]
 
 while True: 
@@ -24,6 +28,7 @@ while True:
 
     if continua == 'N':
         break
+    
 print('='*30)
 print(f'Valores digitados!: {lista[0]}')
 print(f'Valores Pares: {lista[1]}')

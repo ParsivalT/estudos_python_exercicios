@@ -1,3 +1,10 @@
+'''
+Desafio 45
+
+Problema: Crie um programa que faça o computador jogar Jokenpô com você.
+
+Resolucao do problema:
+'''
 from random import choice 
 from time import sleep
 
@@ -13,6 +20,7 @@ print('''>>>>>> Digite <<<<<<
 lista = ['Pedra','Papel','Tesoura']
 computador = choice(lista)
 j = int(input('>>>'))
+
 print('>>>> Start <<<<<')
 print('Jo')
 sleep(2)
@@ -23,6 +31,7 @@ sleep(1)
 
 if j == 1:
     j = 'Pedra'
+
     if j == 'Pedra' and computador == 'Tesoura':
         print(f'''
 Voce Ganhou!
@@ -102,4 +111,3 @@ Voce Escolheu {j}''')
 
 else:
     print(' Erro! Digite Novamente....')
-

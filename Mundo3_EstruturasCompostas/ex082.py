@@ -1,6 +1,13 @@
-#recebe valores e os guarda em uma lista, depois os dividem e pares e impares
-#for thiago 07/03/2022
+'''
+Desafio 82
 
+Problema:  Crie um programa que vai ler vários números e colocar em uma 
+           lista. Depois disso, crie duas listas extras que vão conter apenas 
+           os valores pares e os valores ímpares digitados, respectivamente. Ao 
+           final, mostre o conteúdo das três listas geradas.
+           
+Resolucao do problema:
+'''
 lista = []
 pares = []
 impares = []

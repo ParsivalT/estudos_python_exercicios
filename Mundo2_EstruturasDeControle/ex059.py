@@ -1,5 +1,22 @@
-#um programa que deixa o usuario escolher oque fazer com os valores digitados!
+'''
+Desafio 59
 
+Problema:  Crie um programa que leia dois valores e mostre um menu na tela:
+
+[ 1 ] somar
+
+[ 2 ] multiplicar
+
+[ 3 ] maior
+
+[ 4 ] novos números
+
+[ 5 ] sair do programa
+
+Seu programa deverá realizar a operação solicitada em cada caso.
+
+Resolucao do problema:
+'''
 import os  #posso executar comandos no terminal com esse modulo 
 
 ma = 0
@@ -19,6 +36,7 @@ while m != 5:
 -----------------------
 : '''))
     print('-='*30)
+
     if m == 1:
         print(f'O Valor Da soma Entre {v1} e {v2} e: {v1+v2}')
     
@@ -29,6 +47,7 @@ while m != 5:
         
         if v1 > v2:
             print(f'O maior valor e: {v1}')
+
         else:
             print(f'O maior valor e: {v2}')
 

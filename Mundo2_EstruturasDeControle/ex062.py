@@ -1,5 +1,12 @@
-#Mostra os 10 primeiros termos de uma PA
+'''
+Desafio 62
 
+Problema: Melhore o DESAFIO 61, perguntando para o usuário se ele quer 
+          mostrar mais alguns termos. O programa encerrará quando ele disser
+          que quer mostrar 0 termos.
+          
+Resolucao do problema:
+'''
 print('-=-'*20)
 primeiro = int(input('Primeiro Termo: '))
 razao = int(input('Razao: '))
@@ -28,7 +35,6 @@ while cont <= periodo :
         else: 
             print('Digite uma Opcao valida!')
             
-
 print('-=-'*20)
 print(f'PA finalizada com {periodo} termos! ')
 print('-=-'*20)

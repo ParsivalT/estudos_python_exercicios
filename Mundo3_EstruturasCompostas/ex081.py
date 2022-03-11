@@ -1,6 +1,15 @@
-#Uma algoritimo que recebe varios valores, e em ordem decresente e se o numero 5 foi digitado
-# for: Thiago 06/03/2022
+'''
+Desafio 81
 
+Problema:  Crie um programa que vai ler vários números e colocar em uma lista.
+           Depois disso, mostre:                                                      
+                
+                 A) Quantos números foram digitados.                                                    
+                 B) A lista de valores, ordenada de forma decrescente.                                  
+                 C) Se o valor 5 foi digitado e está ou não na lista.
+                 
+Resolucao do problema:
+'''
 lista = []
 
 while True:
@@ -24,4 +33,5 @@ print(f'Os valores em ordem decrecente sao {lista}')
 
 if 5 in lista:
     print('Voce Digitou o numero 5')
+    
 print('='*30)

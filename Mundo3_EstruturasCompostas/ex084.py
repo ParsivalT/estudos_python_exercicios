@@ -1,4 +1,15 @@
-#for thiago 08/03/2022
+'''
+desafio 84
+
+Problema: Faça um programa que leia nome e peso de várias pessoas,
+          guardando tudo em uma lista. No final, mostre:
+
+                    A) Quantas pessoas foram cadastradas.
+                    B) Uma listagem com as pessoas mais pesadas.
+                    C) Uma listagem com as pessoas mais leves.
+                    
+Resolucao do problema:
+'''
 #definir as listas globais
 dados = list()
 pessoa = list()
@@ -23,7 +34,6 @@ while True:
 
 
     pessoa.clear()
-    
     continua = str(input('Deseja continuar? [S/N]: ')).strip().upper()
 
     while continua not in 'SN': 
@@ -39,11 +49,14 @@ print(f'Existem {len(dados)} pessoas cadastradas!')
 print(f'Maior valor registrado: {pesado} que sao de: ', end=' ')
 
 for p in dados:
+
     if p[1] == pesado:
         print([p[0]], end=' ')
 
 print(f'\nMenor valor registrado: {leve} que sao de: ', end=' ')
+
 for p in dados:
+    
     if p[1] == leve:
         print([p[0]], end=' ')
 print()

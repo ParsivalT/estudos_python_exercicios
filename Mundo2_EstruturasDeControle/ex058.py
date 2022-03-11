@@ -1,5 +1,13 @@
-#jogo de adivinhar o numero de 1 a 10 que foi escolhido peloo programa!
+'''
+Desafio 58
 
+Problema:  Melhore o jogo do DESAFIO 28 onde o computador vai “pensar” 
+           em um número entre 0 e 10. Só que agora o jogador vai tentar
+           adivinhar até acertar, mostrando no final quantos palpites foram
+           necessários para vencer.
+           
+Resolucao do problema:
+'''
 from random import randint
 from time import sleep 
 
@@ -23,13 +31,14 @@ print('Pronto, Agora tente Adivinhar!')
 
 while j != n:
     j = int(input('Qual Numero Voce Acha Que eu Pensei?: '))
+
     if j != n:
         p += 1 
         print('>>>>>>> \033[31mTente de Novo!\033[m <<<<<<<<')
+
     print('--'*30)
 
 print(f'''>>>>>>>  \033[36mVoce Acertou!\033[m <<<<<<<<
 numero que eu escolhi foi: {n}
 numero de vezes que voce tentou: {p}''')
-
 

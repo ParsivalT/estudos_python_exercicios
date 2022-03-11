@@ -1,15 +1,31 @@
-#10 primeiros termos de uma sequencia de fibonacci 
+'''
+Desafio 63
 
-'''f1 = int(input('Primeiro Termo: '))
-f3 = [0] 
-cont = 0
+Problema: Escreva um programa que leia um número N inteiro qualquer e 
+          mostre na tela os N primeiros elementos de uma Sequência de Fibonacci.
+          Exemplo:
 
-while cont < 10:
-    cont += 1 
-    f3.append(f1)
-    f3.sort()
-    f1 = f1 + f3[-2]
-    print(f1, end=' -> ')
+                0 – 1 – 1 – 2 – 3 – 5 – 8
+                
+Resolucao do problema:
+'''
+print('=='*20)
+print('Sequencia de Fibonacci!')
+
+numero = int(input('Quantos termos voce deseja mostrar?: '))
+t1 = 0
+t2 = 1
+
+print(f'Sequencia: {t1} -> {t2}', end=' -> ')
+
+while numero > 0:
+
+    t3 = t1 + t2
+    t1 = t2
+    t2 = t3
+    numero -= 1
+
+    print(f'{t3}', end =' -> ')
     
-print('FIM')
-print(f3)'''
+print('FIM\n')
+print('=='*20)

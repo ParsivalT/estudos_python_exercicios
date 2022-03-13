@@ -33,7 +33,7 @@ Repositório dedicado a soluções de todos os desafios propostos no curso de Py
 
 #
  <div align="center">
-  <p>Feito com :heart: e JavaScript.</p>
+  <p>Feito com :heart: e Python.</p>
   <p>Créditos: <a href="https://github.com/matheusfelipeog/curso-em-video-python3">Matheus Felipe</a> 
   </p>
 </div>

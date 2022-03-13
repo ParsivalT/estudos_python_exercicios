@@ -23,7 +23,6 @@ else:
     aluno['estado'] = '\033[31mReprovado\033[m'
 
 print('='*33)
-
 print(f'- O nome do aluno: {aluno["nome"]}')
 print(f'- A media dele/dela foi: {aluno["media"]}')
 print(f'- Estado atual do aluno: {aluno["estado"]}')

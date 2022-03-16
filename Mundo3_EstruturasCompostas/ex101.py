@@ -8,27 +8,22 @@ Problema: Crie um programa que tenha uma função chamada voto() que vai
           
 Resolucao do problema:
 '''
-from datetime import date
-
-
 def voto(num):
-    
-    ano = date.today().year
-    ano -= num
+    from datetime import date
 
-    if ano < 16:
-        return 'NAO VOTA!'
+    atual = date.today().year
+    idade = atual - num 
+
+    if idade < 16:
+        return f'Com {idade} anos: NAO VOTA!'
    
-    if ano >= 18:
-        return 'VOTO OBRIGATORIO!'
+    if idade >= 18:
+        return f'Com {idade} anos: VOTO OBRIGATORIO!'
 
-    if ano >= 65 or ano >= 16 and ano < 18:
-        return 'OPCIONAL!'
+    if idade >= 65 or idade >= 16 and idade < 18:
+        return f'Com {idade} anos: OPCIONAL!'
 
 
 #programa principal
-print('='*36)
-ano = int(input('Digite o ano do seu nascimento: '))
-idade = date.today().year - ano
-print(f'Com {idade} anos: {voto(ano)}')
-print('='*36)
+ano = int(input('Digite o ano de nascimento: '))
+print(voto(ano))

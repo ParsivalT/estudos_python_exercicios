@@ -33,9 +33,9 @@ def fatorial(num, show=False):
             c -= 1
             print(c, end='')
             print(' x ' if c > 1 else ' = ', end='')
-
+            
         print(fatorial)
-    
 
+    
 print('-'*30)
-fatorial(6, show=True)
+print(fatorial(6))

@@ -9,16 +9,16 @@ def metade(valor):
 
     return valor / 2
 
-def aumenta(valor):
+def aumenta(valor, taxa):
     '''Recebe um valor e retorna o mesmo
        com um aumento de 10%'''
 
-    return valor + ((valor * 10) / 100)
+    return valor + ((valor * taxa) / 100)
 
-def diminui(valor):
+def diminui(valor, taxa):
     '''Recebe um valor e retorna o mesmo
        com  10% menor '''
 
-    return valor - ((valor * 10) / 100)
+    return valor - ((valor * taxa) / 100)
 
     

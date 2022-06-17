@@ -39,6 +39,9 @@ def leArquivo(arq):
 
     else:
         try:
+	    
+            print(f'{" Nome":<30}{"Idade":>8}')
+            print('-'*40)
             for linha in arquivo:
 
                 dado = linha.split(';')

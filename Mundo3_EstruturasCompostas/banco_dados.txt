@@ -1,3 +1,1 @@
-Fulano;30
-Ssicrano;25
-Beltrano;55
+Maria Eduarda;15
